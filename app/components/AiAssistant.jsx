@@ -7,7 +7,6 @@ export default function AiAssistant() {
   const [query, setQuery] = useState("")
   const [response, setResponse] = useState("")
   const [loading, setLoading] = useState(false)
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
