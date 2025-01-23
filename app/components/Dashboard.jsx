@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NetworkStatusChart from './NetworkStatusChart'
 import LearningProgressChart from './LearningProgressChart'
-import AIAssistant from './AIAssistant'
+import AiAssistant from './AiAssistant'
 
 export default function Dashboard() {
   const [isLoading, setIsLoading] = useState(true)
@@ -45,7 +45,7 @@ export default function Dashboard() {
           </motion.div>
         </div>
       )}
-      <AIAssistant />
+      <AiAssistant />
     </motion.section>
   )
 }

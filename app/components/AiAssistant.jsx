@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 
-export default function AIAssistant() {
+export default function AiAssistant() {
   const [query, setQuery] = useState("")
   const [response, setResponse] = useState("")
   const [loading, setLoading] = useState(false)
