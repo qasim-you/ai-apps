@@ -1,8 +1,10 @@
 "use client"; // Ensures this component is only rendered on the client side
 
 import { motion } from "framer-motion";
+import Link from "next/link"
 
 export default function Hero() {
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -14,6 +16,13 @@ export default function Hero() {
       <p className="text-xl mb-8 text-gray-800">
         Connecting underserved schools to the power of AI and the internet
       </p>
+      <Link href="/chatbot">
+
+      <button  className="bg-indigo-600 text-white px-4 py-2 rounded-md">
+         AI Tutor
+
+      </button>
+      </Link>
     </motion.div>
   );
 }
