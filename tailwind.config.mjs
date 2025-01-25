@@ -1,17 +1,25 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backdropBlur: {
+        xs: '2px',
+        xl: '24px',
       },
+      animation: {
+        'gradient-pulse': 'gradient-pulse 8s ease infinite',
+      },
+      keyframes: {
+        'gradient-pulse': {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+        }
+      }
     },
   },
-  plugins: [],
-};
+  plugins: [
+  ],
+}
