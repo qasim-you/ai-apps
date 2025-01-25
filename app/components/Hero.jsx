@@ -9,7 +9,7 @@ export default function Hero() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }} 
+      transition={{ duration: 0.8 }}
       className="text-center py-20"
     >
       <h1 className="text-4xl font-bold mb-4 text-gray-800">AI-Powered Education Network</h1>
@@ -18,10 +18,16 @@ export default function Hero() {
       </p>
       <Link href="/chatbot">
 
-      <button  className="bg-indigo-600 text-white px-4 py-2 rounded-md">
-         AI Tutor
+        <button className="bg-indigo-600 text-white px-4 py-2 rounded-md">
+          AI Tutor
 
-      </button>
+        </button>
+      </Link>
+      <Link href="/network">
+
+        <button className="bg-indigo-600 text-white px-4 py-2 rounded-md mx-5">
+          View Dashboard
+        </button>
       </Link>
     </motion.div>
   );
